@@ -1,0 +1,49 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Define the grid columns: 2/3 for article text, 1/3 for comments */
+    gap: 20px; /* Add some gap between the grid items */
+}
+
+.text-display-area {
+    padding: 20px;
+}
+
+.comment-display-area {
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.comment-form {
+    padding: 20px;
+    grid-column: 1 / -1; /* Span the comment form across both columns */
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.comment {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.connector-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interference with interactions */
+}
